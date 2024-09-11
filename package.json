@@ -1,4 +1,4 @@
-{
+{  "homepage": "https://kellysand.github.io/ReactJS-Static-Resume/",
   "name": "codespaces-react",
   "version": "0.1.0",
   "private": true,
@@ -22,6 +22,8 @@
   },
   "scripts": {
     "start": "vite",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest"
