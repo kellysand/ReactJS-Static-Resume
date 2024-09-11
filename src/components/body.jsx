@@ -190,7 +190,7 @@ function BodyCom() {
                           dateTo="2024"
                           inst_Name=" ReactJs Static Resume"
                           item1='REACT.JS'
-                          item2=""
+                          item2="https://github.com/kellysand/ReactJS-Static-Resume"
                         />
                       </>
                     }
