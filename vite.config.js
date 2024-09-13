@@ -9,4 +9,7 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
   },
+  build: {
+    outDir: 'dist' // This specifies the output directory for the build
+  }
 })
