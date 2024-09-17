@@ -1,6 +1,5 @@
 import React from 'react'
 import './body.css'
-import "./header.css"
 import image from '../testimg.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'     
 import {faGraduationCap,faFolderOpen,faBriefcase} from '@fortawesome/free-solid-svg-icons'
@@ -34,13 +33,13 @@ function BodyCom() {
    
     const items =['item1','item2','item3','item4']
     return(
-    // <div  className=" subDiv2Card-1">  
+    <div  className=" subDiv2Card-1">  
      
        <div style={{display:'flex',paddingLeft:'50px', paddingBottom:'10px'  }} >
             {prop.Timeline}
-             <div style={{flex:0.25,}}><p style={{margin:0,paddingLeft:'5px' }}>{prop.dateTo}</p> </div>
+             <div style={{width:"100px"}}><p style={{margin:0,paddingLeft:'5px' }}>{prop.dateTo}</p> </div>
 
-             <div style={{ flex:1, }}><h4 style={{margin:0, paddingLeft:"40px", height:'fit-content', color:"blueviolet"}}>{prop.inst_Name}</h4>
+             <div style={{width:"fit-content"}}><h4 style={{margin:0, paddingLeft:"40px", height:'fit-content', color:"blueviolet"}}>{prop.inst_Name}</h4>
              <ul style={{margin:0, listStyleType: 'none'}}>
              {items.map((item , index)=>{
               return(
@@ -51,7 +50,7 @@ function BodyCom() {
            </div>  
 
      </div>
-   /* </div> */
+   </div> 
    
   )};
 
@@ -77,21 +76,8 @@ function BodyCom() {
   }
 
   return (
-    <>
-     <div className='headerDiv'>
-
-      <div style={{margin: 0,}} className='jobTitile'>
-        <h2 style={{margin:0,color:'white', backgroundColor:'black', width:'100%',
-          height:'100%',display:'flex', justifyContent:'center', alignItems:'center', fontFamily:"sans-serif", boxShadow:' -5px 2.5px blueviolet'}} >
-          Frontend Developer
-        </h2>
-
-      </div>
-      <div  className='fullName' >
-        <h1 style={{  margin: 0,fontFamily:'sans-serif', color:'blueviolet'}}>Babalo Mbulawa</h1>
-      </div>
-       
-     </div> 
+  
+     
 
     <div className='mainDivContainer'>
         <div className='subDiv1'>
@@ -106,7 +92,7 @@ function BodyCom() {
 
             <div className='subDiv1_Container_Card2'> 
              <div className='card2ContantContainer'> 
-              <h3>SKILLS</h3>
+              <h2 style={{marginTop:0}}>SKILLS</h2>
               <div className='skillsContainer'>
                
                 <div className='subDiv1_Card2_Skills'> <h4>REACTJS    </h4>   </div>
@@ -115,16 +101,17 @@ function BodyCom() {
                 <div className='subDiv1_Card2_Skills'> <h4>GIT        </h4>       </div>
                 <div className='subDiv1_Card2_Skills'> <h4>CSS        </h4>       </div>
                 <div className='subDiv1_Card2_Skills'> <h4>GITHUB     </h4>    </div>
+                <div className='subDiv1_Card2_Skills'> <h4>C#   </h4>    </div>
                 
               </div>
               
              </div>
             </div>
          </div>
-        </div>
+        </div> 
          <div    className='subDiv2'> 
         
-          <div style={{paddingTop:'',display:'flex',flexDirection:'column', }}>
+          <div style={{paddingTop:'',display:'flex',flexDirection:'column',width:'fit-content',height:'fit-content',}}>
             <CardTitle 
                     icon={faBriefcase} 
                     title="Work Experience"
@@ -199,7 +186,7 @@ function BodyCom() {
           </div>
         </div>
     </div>
-    </>
+    
   )
 }
 
